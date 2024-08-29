@@ -1,0 +1,452 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Roboto", sans-serif !important  ;
+    background-color: #e9d1b8;
+}
+
+.panel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px  80px;
+    
+    background-color: #f79022;
+}
+.panel .phone a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.panel .panel-icon a i {
+    background-color: #3B5998;
+    border-radius: 50%;
+    font-size: 16px;
+    color:white;
+    padding: 8px;
+}
+.panel-icon a .in{
+    background-color: black !important;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    font-family:"poppins", sans-serif !important ;
+}
+.navbar {
+    background-color:black; /* Change to match your theme */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    
+}
+.nav-links  a:hover{
+    color:#f79022;
+}
+.nav-links  li  a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+   background-color: #f79022;
+   bottom: -10px;
+   left: 0;
+   transition: all 0.5s steps(4);
+   visibility: hidden;
+}
+.nav-links  li a:hover:after{
+visibility: visible;
+height: 4px;
+}
+
+.menu-icon {
+    font-size: 28px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #FF6600;
+        z-index: 2;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color:white;
+    transition:all 0.5s ;
+    position: relative;
+    
+}
+
+.header button{
+    background-color: #f79022;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+}
+
+.header button  span{
+    padding-right: 5px;
+}
+.header button:hover{
+    background-color: white;
+    color: black !important;
+    border: 1px solid #f79022;
+    cursor: pointer;
+    
+}
+/* herosection */
+.hero-section{
+    background-image: url(./images/Best-Online-Quran-Tutor-in-Pakistan.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .hero-h2{
+    
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.hero-section .hero-h1{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+}
+.hero-section .card{
+    background-color: #f79022;
+    color: white;
+    width: 100%;
+    margin-top: 70px;
+
+}
+.hero-section .card h2{
+    margin-top: 50px;
+}
+.hero-section .card-body form input{
+    width: 100%;
+    padding: 5px ;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.hero-section .card-body form textarea{
+    width: 100%;
+    margin-top: 10px;
+}
+.hero-section .card-body button{
+    padding: 10px 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    transition: 0.5s ease;
+    margin-top: 10px;
+}
+.hero-section .card-body button:hover{
+    background-color: white;
+    color: black;
+}
+/* About */
+.about-h h3{
+     font-size: 28px; 
+    font-weight: 600;
+
+}
+.about-h p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.about-icon i{
+    color: #f79022;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+.about-content{
+    height: 100%;
+}
+.about-content h3{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 15px 0px;
+}
+/* coresers */
+.coureses{
+    margin-top: 70px;
+}
+.coureses-h h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+.coureses .card {
+    background-color: #f79022;
+    color: white;
+    border: 4px solid #f79022;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.coureses .card-img img{
+    border-radius: 10px;
+    transition: 0.5s ease;
+    
+
+}
+.coureses .card-img img:hover{
+    transform: scale(1.1);
+}
+.coureses .card-body h2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+
+}
+/* contact */
+.content{
+    margin-left: 20px;
+}
+.content h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+.content form input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.content form textarea{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.content button{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #f79022;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+
+}
+.content button:hover{
+    background-color: black;
+    color: white;
+}
+/* footer */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 50px 0px;
+}
+.footer b{
+    font-size: 22px;
+    color: #f79022;
+}
+.footer .unstyled-lists ul{
+    padding-left: 0;
+    margin-left: 0;
+}
+.footer .unstyled-lists ul li{
+    list-style: none;
+   
+}
+.footer .unstyled-lists ul li a{
+    text-decoration: none;
+    font-size:16px ;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    line-height: 2rem;
+   transition:0.5s ;
+    
+}
+.footer .unstyled-lists ul li a:hover{
+    color: #f79022;
+}
+.footer .unstyled-lists a{
+    text-decoration: none;
+    font-size:16px ;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    line-height: 2rem;
+   transition:0.5s ;
+}
+.footer .unstyled-lists a span{
+    margin-right:15px;
+}
+.footer .unstyled-lists  a:hover{
+    color: #f79022;
+}
+.footer .copyright b{
+   color: white;
+}
+
+@media (max-width:425px){
+    .header .unstyled-list{
+        display: none;
+    }
+    .header button{
+        display: none;
+    }
+    .hero-section .card{
+        margin-top: 30px;
+    }
+    .hero-h1{
+        display: none;
+    }
+}
+/* servies */
+.dua-head h2{
+    font-size: 30px;
+
+
+}
+.dua-content{
+    background-color: #f79022;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    min-height: 100%;
+    transition: 0.5s ease;
+}
+.dua-content:hover{
+    cursor: pointer;
+    transform: translatey(10px);
+}
+.hafiz .card-img{
+    background-color: #f79022;
+    border: none;
+    border-radius: 10px;
+}
+.hafiz .card-img img{
+    border-radius: 10px;
+    border: 4px solid #f79022;
+    transition: 0.5s ease;
+}
+.hafiz .card-img img:hover{
+    transform: scale(1.1);
+}
+.hafiz .card-body a{
+    text-decoration: none;
+    color: white;
+}
+.nazra .card-img{
+    background-color: #f79022;
+    border: none;
+    border-radius: 10px;
+}
+.nazra .card-img img{
+    border-radius: 10px;
+    border: 4px solid #f79022;
+    transition: 0.5s ease;
+}
+.nazra .card-img img:hover{
+    transform: scale(1.1);
+}
+.nazra .card-body a{
+    text-decoration: none;
+    color: white;
+}
+.tajweed .card-img{
+    background-color: #f79022;
+    border: none;
+    border-radius: 10px;
+}
+.tajweed  .card-img img{
+    border-radius: 10px;
+    border: 4px solid #f79022;
+    transition: 0.5s ease;
+}
+.tajweed  .card-img img:hover{
+    transform: scale(1.1);
+
+}
+.tajweed  .card-body a{
+    text-decoration: none;
+    color: white;
+}
+#coureses-h1 h3 span{
+    color: #f79022;
+}
+.hero-h2 h1 span{
+    color: #f79022;
+}
+.about-h h3 span{
+    color: #f79022;
+}
+.hero-h1 h1 span{
+    color: #f79022;
+}
+.coureses-h h3 span{
+    color: #f79022;
+}
